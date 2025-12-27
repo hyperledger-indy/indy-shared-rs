@@ -1,4 +1,4 @@
-module github.com/hyperledger/indy-shared-rs/wrappers/golang/indy-credx
+module github.com/hyperledger-indy/indy-shared-rs/wrappers/golang/indy-credx
 
 go 1.14
 
