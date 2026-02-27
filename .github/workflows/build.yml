@@ -162,7 +162,7 @@ jobs:
           cargo build --lib --release --package indy-credx --target ${{ matrix.target }} --features vendored
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: library-${{ matrix.architecture }}
           path: target/${{ matrix.target }}/release/${{ matrix.lib }}
@@ -234,7 +234,7 @@ jobs:
           pip install setuptools wheel twine auditwheel
 
       - name: Fetch library artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: library-${{ matrix.architecture }}
           path: wrappers/python/indy_credx/
